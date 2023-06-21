@@ -1,22 +1,9 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
+#include "tercerparcial.h"
+#include "Menus.h"
 
-
-void MenuPrin(void);
-void TituloPortada(int ancho, int alto, char texto[]);
-
-//DECLARACION DE MACROS
-#define FILAS 3
-#define COLUMNAS 3
-
-//DECLARIACION DE VARIABLES
-void Menuarreglo1(void);
-void MenuArreglos2d(void);
-void LeeVec(float Vector1[10]);
-void VerVector(float Vector1[10]);
-void MenuOp1(void);
-void mostrarMatriz(int matriz[FILAS][COLUMNAS]);
 
 int main() {
 	int anchoMarco = 45;
@@ -153,105 +140,9 @@ int main() {
 	return 0;
 }
 
-/////////////////////////////////////////////DESARROLLO DE FUNCIONES//////////////////////////////////////////////////////
-
-void TituloPortada(int ancho, int alto, char texto[]) {
-    int i, j;
-    int margen = 2;
-    int textoLongitud = ancho - 2 * margen;
-
-    // Imprimir la parte superior del marco
-    for (i = 0; i < ancho; i++) {
-        printf("-");
-    }
-    printf("\n");
-
-    // Imprimir el contenido del marco
-    for (i = 0; i < alto; i++) {
-        if (i == (alto - 1) / 2) {
-            // Imprimir el texto centrado en la línea del medio
-            printf("|");
-            for (j = 0; j < margen; j++) {
-                printf(" ");
-            }
-            printf("%-*s", textoLongitud, texto);
-            for (j = 0; j < margen; j++) {
-                printf(" ");
-            }
-            printf("|\n");
-        }
-        else {
-            // Imprimir líneas verticales con espacios en blanco
-            printf("|");
-            for (j = 0; j < ancho - 2; j++) {
-                printf(" ");
-            }
-            printf("|\n");
-        }
-    }
-
-    // Imprimir la parte inferior del marco
-    for (i = 0; i < ancho; i++) {
-        printf("-");
-    }
-    printf("\n");
-}
-
-//MENU PRINCIPAL DE OPCIONES
-
-void MenuPrin(void) {
-	printf("==================================================== \n");
-	printf("\t\t PARCIALES \n");
-	printf("\t\t 1) PARCIAL 1 \n");
-	printf("\t\t 2) PARCIAL 2 \n");
-	printf("\t\t 3) PARCIAL 3 \n");
-	printf("\t\t 4) SALIR DEL MENU \n");
-
-}
 
 
-void Menuarreglo1(void) {
-	printf("\t\t\t\t MENU ARREGLOS \n");
-	printf("\t\t\t\t 1) ARREGLO DE UNA DIMENSION \n");
-	printf("\t\t\t\t 2) ARREGLO DE DOS DIMENSIONES \n");
-	printf("\t\t\t\t 3) REGRESAR \n");
-}
-void MenuArreglos2d(void) {
-	printf("\t\t\t\t ARREGLOS UNA DIMENSION \n");
-	printf("\t\t\t\t 1) VECTORES \n");
-	printf("\t\t\t\t 2) EJEMPLO MATRICES \n");
-	printf("\t\t\t\t 3) REGRESAR \n");
-}
-void MenuOp1(void) {
-	printf("MENU DE VECTORES:  \n");
-	printf("***************************** \n");
-	printf("1) LECTURA DE UN VECTOR \n");
-	printf("2) VISUALIZAR AL VECTOR \n");
-	printf("3) BUSCAR UN DATO EN EL VECTOR \n");
-	printf("4) MODIFICA UN DATO DEL VECTOR \n");
-	printf("5) SALIDA DEL MENU DE VECTORES \n");
-}
-void LeeVec(float Vector1[10]) {
-	int i;  //declaracion de a variable i
 
-	for (i = 0; i < 10; i++) { //inicio del bucle for con i con un valor inicial, pero i tiene que ser menor que 10 y a la variable i se le incrementara de 1 en 1
-		printf("Vector1[%f] = ");
-		scanf("%f", &Vector1[i]); //nos solicita el valor del vector 1
-	}
-}
-void VerVector(float Vector1[10]) {
-	int i;
-	for (i = 0; i < 10; i++) { //inicio del bucle for con i con un valor inicial, pero i tiene que ser menor que 10 y a la variable i se le incrementara de 1 en 1
-		printf("Vector[%d] = %f \n", i, Vector1[i]); //impresion en pantalla de i y el vector 1
-	}
 
-}
-void mostrarMatriz(int matriz[FILAS][COLUMNAS]) {
-	for (int i = 0; i < FILAS; i++) { //incio del bucle for, i tiene un valor inicial de 0, esta tiene que ser menor que el numero de filas previamente definidos en la macro
-		for (int j = 0; j < COLUMNAS; j++) { //bucle for anidado que contiene a j con valor inicial de 0 y j es menor que el numero de columnas que ya se ha definido
-			printf("%d ", matriz[i][j]); //muestra en pantalla la matriz
-		}
-		printf("\n"); //salto de linea
-	}
-}
+
 
