@@ -13,11 +13,7 @@ int main() {
     //DECLARACION DE VARIABLES
     float Vector1[10]; //arreglo de tipo flotante con 10 espacios
     int ACTIVAR, buscarvec, modif_vec, valor2_vec; //variables que se usan en el menu de vectores
-    int matriz[FILAS][COLUMNAS] = { //arreglo de 2 dimensiones que contiene una matriz de 3x3 
-        {1, 2, 3},
-        {4, 5, 6},
-        {7, 8, 9}
-    };
+	int matriz[FILAS][COLUMNAS]; //arreglo de 2 dimensiones que contiene una matriz
 
 	do {
 		system("pause"); system("cls");
@@ -109,8 +105,9 @@ int main() {
 					break;
 				case 2:
 					printf("TEMA: ARREGLOS DE DOS DIMENSIONES \n");
-					printf("PROGRAMA: Diseño de un programa ESTRUCTURADO un ejemplo de una matriz utilizando arrelgos bidimensionales. \n\n");
-					mostrarMatriz(matriz); //se muestra la matriz de ejemplo llamando a la funcion
+					printf("PROGRAMA: Diseño de un programa ESTRUCTURADO que muestre la matriz digitada por un usuario. \n\n");
+					LeerMatriz(matriz); //se muestra la matriz de ejemplo llamando a la funcion
+					MostrarMatriz(matriz);
 					break;
 				case 3:
 					printf("Saliendo del menu \n"); //salida del menu principal

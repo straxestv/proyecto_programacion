@@ -1,4 +1,5 @@
 #pragma once
+
 #define FILAS 3
 #define COLUMNAS 3
 
@@ -38,11 +39,21 @@ void VerVector(float Vector1[10]) {
 	}
 
 }
-void mostrarMatriz(int matriz[FILAS][COLUMNAS]) {
-	for (int i = 0; i < FILAS; i++) { //incio del bucle for, i tiene un valor inicial de 0, esta tiene que ser menor que el numero de filas previamente definidos en la macro
-		for (int j = 0; j < COLUMNAS; j++) { //bucle for anidado que contiene a j con valor inicial de 0 y j es menor que el numero de columnas que ya se ha definido
-			printf("%d ", matriz[i][j]); //muestra en pantalla la matriz
+void LeerMatriz(int matriz[FILAS][COLUMNAS]) {
+	int i, j;
+	for (i = 0; i < FILAS; i++) {
+		for (j = 0; j < COLUMNAS; j++) {
+			printf("Ingrese los siguientes %d x %d \n",i,j); scanf("%d",&matriz[i][j]);
 		}
-		printf("\n"); //salto de linea
+	}
+}
+
+void MostrarMatriz(int matriz[FILAS][COLUMNAS]) {
+	int i, j;
+
+	for (i = 0; i < FILAS; i++) {
+		for (j = 0; j < COLUMNAS; j++) {
+			printf("\t %d \t", matriz[i][j]);
+		}printf("\n");
 	}
 }
