@@ -3,7 +3,7 @@
 #include<math.h>
 #include "tercerparcial.h"
 #include "Menus.h"
-
+#include "Menu1erparcial.h"
 
 int main() {
 	int anchoMarco = 45;
@@ -26,7 +26,30 @@ int main() {
         switch (opcion) {
 
         case 1:
-            break;
+		 do {
+				system("pause"); system("cls"); //pausa del programa y limpieza de pantalla cada vez que se termine cada caso.
+		 MenuPrimerparcial();  //menu primer parcial
+
+				printf("\n Selecione la opcion: "); scanf("%d", &opcion2);
+					switch (opcion2) {
+						case 1:printf("1\n");
+							break;
+		  			  case 2:printf("2\n");
+		    				break;
+		   			 case 3: 
+					
+						printf("3\n");
+		    			    break;
+		   			 case 4:printf("4\n");
+		    				break;
+		    			case 5:printf("5\n");
+		   			     break;
+		   			 case 6:printf("Saliendo del Primer Parcial\n");
+           			     break;
+						default:printf("Opcion inexistente\n");
+					}
+					}while (opcion2 != 6);
+           			 break;
 
         case 2:
             break;
@@ -130,7 +153,7 @@ int main() {
 
 
 
-	} while (opcion != 4);
+	} while(opcion != 4);
 
 
 
