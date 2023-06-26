@@ -10,7 +10,7 @@ int main() {
 	int anchoMarco = 45;
 	int altoMarco = 6;
 	char texto[] = "        MENU PROYECTO FINAL";
-	int opcion, opcion1, opcion2;//declaracion de las variables tipo entero que almacenan el dato correspondiente a la opcion
+	int opcion, opcion1, opcion2, opcion3;//declaracion de las variables tipo entero que almacenan el dato correspondiente a la opcion
     //DECLARACION DE VARIABLES
     float Vector1[10]; //arreglo de tipo flotante con 10 espacios
     int ACTIVAR, buscarvec, modif_vec, valor2_vec; //variables que se usan en el menu de vectores
@@ -130,8 +130,34 @@ int main() {
 				case 2:
 					printf("TEMA: ARREGLOS DE DOS DIMENSIONES \n");
 					printf("PROGRAMA: Diseño de un programa ESTRUCTURADO que muestre la matriz digitada por un usuario. \n\n");
-					LeerMatriz(matriz); //se muestra la matriz de ejemplo llamando a la funcion
-					MostrarMatriz(matriz);
+					
+					
+					do{
+						
+						system("pause"); system("cls");
+						MenuMatriz();
+						
+						printf("Ingrese la opcion: "); scanf("%d",&opcion3);
+						
+						switch(opcion3){
+							
+							case 1:
+								LeerMatriz(matriz); 
+								break;
+							case 2:
+								MostrarMatriz(matriz);
+							    break;
+							case 3:
+								printf("Regresando....");
+								break;
+										
+							default: printf("OPCION INCORRECTA!! ");
+							
+						}
+						
+						
+					}while(opcion3 != 3);
+					
 					break;
 				case 3:
 					printf("Saliendo del menu \n"); //salida del menu principal
