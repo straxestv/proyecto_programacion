@@ -16,7 +16,8 @@ void MenuArreglos2d(void) {
 	printf("\t\t\t\t 3) REGRESAR \n");
 }
 void MenuOp1(void) {
-	printf("MENU DE VECTORES:  \n");
+	printf("MENU DE VECTORES: \n\n");
+
 	printf("***************************** \n");
 	printf("1) LECTURA DE UN VECTOR \n");
 	printf("2) VISUALIZAR AL VECTOR \n");
@@ -39,11 +40,22 @@ void VerVector(float Vector1[10]) {
 	}
 
 }
+
+void MenuMatriz(void){
+	printf("MENU DE MATRICES \n");
+	
+	printf("1) INGRESA LA MATRIZ \n");
+	printf("2) MOSTRAR MATRIZ \n");
+	printf("3) REGRESAR \n");
+
+	
+	
+}
 void LeerMatriz(int matriz[FILAS][COLUMNAS]) {
 	int i, j;
 	for (i = 0; i < FILAS; i++) {
 		for (j = 0; j < COLUMNAS; j++) {
-			printf("Ingrese los siguientes %d x %d \n",i,j); scanf("%d",&matriz[i][j]);
+			printf("Ingrese el dato: (%d , %d)\n",i,j); scanf("%d",&matriz[i][j]);
 		}
 	}
 }
@@ -57,3 +69,8 @@ void MostrarMatriz(int matriz[FILAS][COLUMNAS]) {
 		}printf("\n");
 	}
 }
+
+    
+	    
+
+
