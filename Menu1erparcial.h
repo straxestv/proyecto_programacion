@@ -26,11 +26,14 @@ void TiposDatos() {
                 printf("\nTipos de datos enteros:\n");
                 printf("-------------------------------\n");
                 printf("1. int:\n");
-                printf("Representa numeros enteros.\n");
-                printf("Ejemplo: int edad = 25;\n\n");
-                printf("2. long int:\n");
+                printf("Representa numeros enteros(no soporta decimales).\n");
+                printf("Ejemplo:\n\n");
+                printf("Se declara una variable entera, con el nombre de edad, la cual se le asiga el valor de 25.\n");
+                printf("-int edad = 25;\n\n");
+                printf("2. long int(no soporta decimales):\n");
                 printf("Representa numeros enteros largos.\n");
-                printf("Ejemplo: long int poblacion = 1000000;\n\n");
+                printf("Se declara una variable entera larga, con el nombre de poblacion, la cual se le asigna el valor de 1000000.\n");
+                printf("-long int poblacion = 1000000;\n\n");
                 break;
             case 2:
                 printf("\nTipos de datos flotantes:\n");
@@ -108,6 +111,7 @@ void EntradaSalidaDatos() {
     } while (opcion != 3);
 }
 void OperadoresRelacionales() {
+	
    int opcion;
     int a, b;
 
@@ -218,4 +222,42 @@ void OperadoresRelacionales() {
 
         system("pause");
     } while (opcion != 7);
+}
+void Operadores(){
+	int opcion;
+	int a,b,c;
+do{	
+	system("cls");
+	printf("\t\t\tMENU DE EJEMPLOS\n\n");
+	printf("\t1.Suma (+)\n");
+	printf("\t2.Resta (-)\n");
+	printf("\t3.Multiplicacion (*)\n");
+	printf("\t4.Division (/)\n");
+	printf("\t5.Porcentaje (%%)\n");
+	printf("\t6.Potencia (pow)\n");
+	printf("\t7.Raiz (sqrt)\n");
+	printf("\t8.Salir del menu\n\n\n");
+	printf("\tSeleccione una opcion: "); scanf("%d",&opcion);
+	printf("\n\n");
+	switch(opcion){
+		case 1:
+			printf("\t\t\tSuma de dos numeros enteros\n\n");
+			
+			printf("\tDeme el valor del primer numero:"); scanf("%d",&a);
+			printf("\tDeme el valor del segundo numero:"); scanf("%d",&b);
+			c=a+b;
+			printf("\n\tLa suma de %d + %d = %d\n\n",a,b,c);
+			printf("\tEn este caso declaramos cada una de las variables, es decir tenemos el primer numero entero declarado\n");
+			printf("\tcomo una variable entera llamada a y en el caso del segundo numero entero le llamamos b, al resultado\n");
+			printf("\tlo declaramos como una variable entera con el nombre de c.\n");
+			printf("\tPara realizar la suma creamos un algoritmo de la siguiente forma c=a+b, donde a y b son los numeros que\n");
+			printf("\tpedimos al usuario y nuesto operador de suma es usado para sumar nuestros dos numeros enteros\n\n");
+		break;
+	
+
+	}
+	system("pause");
+	
+
+}while(opcion==8);
 }

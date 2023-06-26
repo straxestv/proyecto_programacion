@@ -37,7 +37,7 @@ int main() {
 							break;
 		  			  case 2: EntradaSalidaDatos();
 		    				break;
-		   			 case 3: 
+		   			 case 3: Operadores(); 
 					
 						printf("3\n");
 		    			    break;
