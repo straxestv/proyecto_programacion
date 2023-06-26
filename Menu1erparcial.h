@@ -24,20 +24,21 @@ void TiposDatos() {
         switch (opcion) {
             case 1:
                 printf("\nTipos de datos enteros:\n");
-                printf("-------------------------------\n");
+                printf("-------------------------------\n\n");
                 printf("1. int:\n");
                 printf("Representa numeros enteros(no soporta decimales).\n");
                 printf("Ejemplo:\n\n");
-                printf("Se declara una variable entera, con el nombre de edad, la cual se le asiga el valor de 25.\n");
-                printf("-int edad = 25;\n\n");
+                printf("\tSe declara una variable entera, con el nombre de edad, la cual se le asiga el valor de 25.\n");
+                printf("\t-int edad = 25;\n\n");
                 printf("2. long int(no soporta decimales):\n");
                 printf("Representa numeros enteros largos.\n");
-                printf("Se declara una variable entera larga, con el nombre de poblacion, la cual se le asigna el valor de 1000000.\n");
-                printf("-long int poblacion = 1000000;\n\n");
+                printf("Ejemplo:\n\n");
+                printf("\tSe declara una variable entera larga, con el nombre de poblacion, la cual se le asigna el valor de 1000000.\n");
+                printf("\t-long int poblacion = 1000000;\n\n");
                 break;
             case 2:
                 printf("\nTipos de datos flotantes:\n");
-                printf("-------------------------------\n");
+                printf("-------------------------------\n\n");
                 printf("1. float:\n");
                 printf("Representa numeros de punto flotante de precision simple.\n");
                 printf("Ejemplo: float precio = 10.99;\n\n");
@@ -47,7 +48,7 @@ void TiposDatos() {
                 break;
             case 3:
                 printf("\nTipos de datos de caracteres:\n");
-                printf("-------------------------------\n");
+                printf("-------------------------------\n\n");
                 printf("1. char:\n");
                 printf("Representa un solo caracter.\n");
                 printf("Ejemplo: char inicial = 'A';\n\n");
@@ -83,19 +84,25 @@ void EntradaSalidaDatos() {
                 printf("\nFunciones de entrada (scanf):\n");
                 printf("------------------------------------\n");
                 printf("La funcion scanf se utiliza para leer datos desde la entrada estandar.\n");
-                printf("Ejemplo: \n");
-                printf("int edad;\n");
-                printf("printf(\"Ingrese su edad: \");\n");
-                printf("scanf(\"%%d\", &edad);\n");
-                printf("printf(\"Su edad es: %%d\\n\", edad);\n");
+                printf("Ejemplo: \n\n");
+                printf("\tSe declara una variable entera con el nombre edad:\n");
+                printf("\t\t-int edad;\n\n");
+                printf("\tSe le solicitara al usuario que ingrese su edad:\n ");
+                printf("\t\t-printf(\"Ingrese su edad: \");\n\n");
+                printf("\tMediante la funcion scanf, se lee el dato, asignandoselo a la variable edad:\n");
+                printf("\t\tscanf(\"%%d\", &edad);\n\n");
+                printf("\tSe despliega el dato antes obtenido, utilizando la variable entera edad:\n");
+                printf("\t\tprintf(\"Su edad es: %%d\\n\", edad);\n");
                 break;
             case 2:
                 printf("\nFunciones de salida (printf):\n");
                 printf("------------------------------------\n");
                 printf("La funcion printf se utiliza para imprimir datos en la salida estandar.\n");
-                printf("Ejemplo: \n");
-                printf("int edad = 25;\n");
-                printf("printf(\"Mi edad es: %%d\\n\", edad);\n");
+                printf("Ejemplo: \n\n");
+                printf("\tSe declara una variable entera con el nombre de edad, la cual se le asigna el valor de 25");
+                printf("\t\tint edad = 25;\n");
+                printf("\tSe imprime los datos mediante la funcion printf,usando la varaible edad ");
+                printf("\t\tprintf(\"Mi edad es: %%d\\n\", edad);\n");
                 break;
             case 3:
                 printf("Saliendo del submenu.\n");
@@ -104,8 +111,6 @@ void EntradaSalidaDatos() {
                 printf("Opcion no valida.\n");
                 break;
         }
-
-        printf("\nPresione Enter para continuar...\n");
         system("pause");
 
     } while (opcion != 3);
