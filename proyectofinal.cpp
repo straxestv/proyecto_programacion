@@ -1,6 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
+#include<windows.h>
 #include "tercerparcial.h"
 #include "Menus.h"
 #include "Menu1erparcial.h"
@@ -32,9 +33,9 @@ int main() {
 
 				printf("\n Selecione la opcion: "); scanf("%d", &opcion2);
 					switch (opcion2) {
-						case 1:printf("1\n");
+						case 1: TiposDatos();
 							break;
-		  			  case 2:printf("2\n");
+		  			  case 2: EntradaSalidaDatos();
 		    				break;
 		   			 case 3: 
 					
@@ -42,7 +43,7 @@ int main() {
 		    			    break;
 		   			 case 4:printf("4\n");
 		    				break;
-		    			case 5:printf("5\n");
+		    			case 5:OperadoresRelacionales(); 
 		   			     break;
 		   			 case 6:printf("Saliendo del Primer Parcial\n");
            			     break;
