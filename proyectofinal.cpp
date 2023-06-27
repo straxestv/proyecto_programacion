@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<windows.h>
+#include <conio.h>
 #include "Menus.h"
 #include "Menu1erparcial.h"
 #include "SegundoParcial.h"
