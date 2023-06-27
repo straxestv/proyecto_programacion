@@ -62,9 +62,9 @@ int main() {
 				
         		Menuparcial2();	//Menu del parcial 2
         		
-        		printf("\n\t\t\t\t Selecione la opcion: "); scanf("%d", &opcion);  //lectura de datos que se almacenaran en la variable opcion
+        		printf("\n\t\t\t\t Selecione la opcion: "); scanf("%d", &opcion2p);  //lectura de datos que se almacenaran en la variable opcion
         		
-        		switch (opcion) {
+        		switch (opcion2p) {
 						case 1: 
 								MenuIfElse();
 								
@@ -87,7 +87,7 @@ int main() {
 
 						
 				} 
-			}while (opcion!=4);
+			}while (opcion2p!=4);
 			break;
 
         case 3:
