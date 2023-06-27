@@ -41,7 +41,7 @@ int main() {
 							break;
 		  			  case 2: EntradaSalidaDatos();
 		    				break;
-		   			 case 3: Operadores(); 
+		   			 case 3: operadores(); 
 					
 						printf("3\n");
 		    			    break;
