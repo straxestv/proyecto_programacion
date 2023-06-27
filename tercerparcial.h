@@ -51,6 +51,19 @@ void MenuMatriz(void){
 	
 	
 }
+
+void MenuMatriz(void){
+	printf("MENU DE MATRICES \n");
+	
+	printf("1) INGRESA LA MATRIZ \n");
+	printf("2) MOSTRAR MATRIZ \n");
+	printf("3) REGRESAR \n");
+
+	
+	
+}
+
+
 void LeerMatriz(int matriz[FILAS][COLUMNAS]) {
 	int i, j;
 	for (i = 0; i < FILAS; i++) {

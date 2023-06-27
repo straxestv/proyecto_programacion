@@ -2,15 +2,18 @@
 #include<stdio.h>
 #include<math.h>
 #include<windows.h>
-#include "tercerparcial.h"
 #include "Menus.h"
 #include "Menu1erparcial.h"
+#include "SegundoParcial.h"
+#include "tercerparcial.h"
+
+
 
 int main() {
 	int anchoMarco = 45;
 	int altoMarco = 6;
 	char texto[] = "        MENU PROYECTO FINAL";
-	int opcion, opcion1, opcion2, opcion3;//declaracion de las variables tipo entero que almacenan el dato correspondiente a la opcion
+	int opcion, opcion1, opcion2, opcion3, opcion2p, opcion2p2, opcion2p3;//declaracion de las variables tipo entero que almacenan el dato correspondiente a la opcion
     //DECLARACION DE VARIABLES
     float Vector1[10]; //arreglo de tipo flotante con 10 espacios
     int ACTIVAR, buscarvec, modif_vec, valor2_vec; //variables que se usan en el menu de vectores
@@ -53,7 +56,38 @@ int main() {
            			 break;
 
         case 2:
-            break;
+			do{	
+				system("pause"); system("cls"); //pausa del programa y limpieza de pantalla cada vez que se termine cada caso.
+				
+        		Menuparcial2();	//Menu del parcial 2
+        		
+        		printf("\n\t\t\t\t Selecione la opcion: "); scanf("%d", &opcion);  //lectura de datos que se almacenaran en la variable opcion
+        		
+        		switch (opcion) {
+						case 1: 
+								MenuIfElse();
+								
+							break;
+				
+						case 2: 
+								MenuSwitch();
+							break;
+						
+						case 3: 
+								MenuCiclos();
+							break;
+							
+						case 4: 
+								printf("\n\t\t\t\tRegresando al Menu Principal :)\n");
+							break;
+							
+						default:
+								printf("\n\t\t\t\tOpcion Incorrecta");           
+
+						
+				} 
+			}while (opcion!=4);
+			break;
 
         case 3:
 			do {
@@ -128,8 +162,8 @@ int main() {
 
 					break;
 				case 2:
-					printf("TEMA: ARREGLOS DE DOS DIMENSIONES \n");
-					printf("PROGRAMA: DiseÃ±o de un programa ESTRUCTURADO que muestre la matriz digitada por un usuario. \n\n");
+				    printf("TEMA: ARREGLOS DE DOS DIMENSIONES \n");
+					printf("PROGRAMA: Diseño de un programa ESTRUCTURADO que muestre la matriz digitada por un usuario. \n\n");
 					
 					
 					do{
