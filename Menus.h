@@ -30,7 +30,7 @@ void TituloPortada(int ancho, int alto, char texto[]) {
             }
             printf("%-*s", textoLongitud, texto);
             for (j = 0; j < margen; j++) {
-                printf(" ");
+            ///    printf("");
             }
             printf("|\n");
         }

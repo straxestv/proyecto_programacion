@@ -13,7 +13,7 @@
 int main() {
 	int anchoMarco = 45;
 	int altoMarco = 6;
-	char texto[] = "        MENU PROYECTO FINAL";
+	char texto[] = "         MENU PROYECTO FINAL";
 	int opcion, opcion1, opcion2, opcion3, opcion2p, opcion2p2, opcion2p3;//declaracion de las variables tipo entero que almacenan el dato correspondiente a la opcion
     //DECLARACION DE VARIABLES
     float Vector1[10]; //arreglo de tipo flotante con 10 espacios
