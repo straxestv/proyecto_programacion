@@ -13,12 +13,12 @@ void TiposDatos() {
     do {
         system("cls"); 
         
-        printf("Tipos de datos disponibles:\n");
-        printf("1. Enteros\n");
-        printf("2. Flotantes\n");
-        printf("3. Caracteres\n");
-        printf("4. Salir\n");
-        printf("Seleccione una opcion: ");
+        printf("\t\t\t\t\tTipos de datos disponibles:\n\n");
+        printf("\t\t\t\t1. Enteros\n");
+        printf("\t\t\t\t2. Flotantes\n");
+        printf("\t\t\t\t3. Caracteres\n");
+        printf("\t\t\t\t4. Salir\n\n");
+        printf("\t\t\t\tSeleccione una opcion: ");
         scanf("%d", &opcion);
 
         switch (opcion) {

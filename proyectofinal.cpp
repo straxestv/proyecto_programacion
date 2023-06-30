@@ -10,7 +10,8 @@
 
 
 
-int main() {
+int main() {	
+system("mode con: cols=160 lines=40");
 	int anchoMarco = 45;
 	int altoMarco = 6;
 	char texto[] = "         MENU PROYECTO FINAL";
