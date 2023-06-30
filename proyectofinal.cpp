@@ -26,7 +26,7 @@ int main() {
         TituloPortada(anchoMarco, altoMarco, texto);
 
 		MenuPrin();
-		printf("Seleccione una opcion: "); scanf("%d", &opcion);
+		printf("\n\nSeleccione una opcion: "); scanf("%d", &opcion);
 
         switch (opcion) {
 

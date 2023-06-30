@@ -397,8 +397,8 @@ void tabla (int x, int y){
 void Programa2ciclos(){
 	system("cls");
 	printf("\n\t\t\t\t Diseno de un programa que visualiza las coordenadas\n");
-	printf("\n\t\t\t\t x, y utilizando  gotoxy(x,y)\n");
-	printf("\n\t\t\t\t y ciclos\n\n");
+	printf("\n\t\t\t\t x, y utilizando  gotoxy(x,y) y ciclos\n\n\n\n");
+
 		
 		float r,Se;   float x, y;
 system("color f9");
@@ -421,7 +421,7 @@ for(x=-3;  x<=9; x++){
 	     	
 	}
 		while(!kbhit());
-	tabla (x,y);
+	
 }
 void PROGRAMASSWITCH(void){
 	system("cls");
