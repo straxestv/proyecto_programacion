@@ -382,7 +382,7 @@ void gotoxy (int x, int y){
  COORD dwPos;
 
  dwPos.X = x; //Establece las coordenadas X.
- dwPos.Y = y; //Establece las coordenadas Y.
+ dwPos.Y = y+10; //Establece las coordenadas Y.
 
  SetConsoleCursorPosition(hcon,dwPos); //Establece la posicion final del cursor.
 }

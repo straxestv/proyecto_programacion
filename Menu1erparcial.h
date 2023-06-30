@@ -377,3 +377,108 @@ do{
 
 }while(opcion!=7);
 }
+void Funciones(){
+	int opcion;
+		do{
+	system("cls");
+	printf("\t\n");
+	printf("\t\t\t\t\t\tMenu funciones\n");
+	printf("\n\n");
+	printf("\t1.- Definicion.\n");
+	printf("\t2.- Sintaxis general de una funcion.\n");
+	printf("\t3.- Como hacer el llamado a una funcion.\n");
+	printf("\t4.- Ejemplo de funcion.\n");
+	printf("\t5.- Salida...\n");
+	printf("\n\n");
+	printf("\tSeleccione una opcion: "); scanf("%d",&opcion);
+
+		
+		switch(opcion){
+			case 1: 
+	printf("\n\n");
+	printf("\t\t\t\t\t\tFunciones\n");
+	printf("\n\n");
+	printf("\tLas funciones nos ayudan a que dentro de nuestra funcion principal solo hayan pocos elementos\n");
+	printf("\tentre ellos las declaraciones de variables y llamados de funciones y asi tener un mejor orden \n");
+	printf("\ty estructura dentro de nuestro programa, asi si llegamos a tener algun error en algun algoritmo\n");
+	printf("\to sintaxis dentro del programa podamos detectarlo de manera mas sencilla.\n");
+	printf("\n\n");
+	break;
+		case 2:
+	printf("\n\n");
+	printf("\t\t\t\tLa sintaxis general de una funcion es:\n");
+	printf("\n\n");
+	printf("\tTipo Nombre (Lista de parametros);\n");
+	printf("\n\n");
+	printf("\tDonde:\n\n");
+	printf("\tTipo, se refiere al tipo de variable a retornar, es decir, pongamos un ejemplo, si\n");
+	printf("\ttenemos una funcion donde es de tipo flotante (float) esta misma nos va a retornar una variable\n");
+	printf("\tde tipo flotante a la hora de llamarla dentro de la funcion principal. Existe un tipo de funcion\n");
+	printf("\tque no retorna nada y puede incluir una lista de parametros o no y se usa normalmente para imprimir\n");
+	printf("\ttexto en pantalla y que este no llene mucho espacio dentro de la funcion principal, esta funcion es\n");
+	printf("\tdenominada funcion vacia o que no retorna nada, declarada con el tipo vacio (void).\n");
+	printf("\n\n");
+	printf("\tNombre, se refiere al nombre que va a tener nuestra funcion, este sera muy importante al momento\n");
+	printf("\tde hacer el llamado a la funcion dentro de la uncion principal y puede ser el nombre que nosotros\n");
+	printf("\tdeseemos, por ejemplo, para una funcion que calcule el area de un triangulo, el nombre de esta puede\n");
+	printf("\tser AreaTiangulo, o bien A solamente, eso depende del programador, lo importante en este caso es no\n");
+	printf("\trepetir nombres si se van a usar varias funciones y/o tener en cuenta que hace cada una de ellas y asi\n");
+	printf("\ttener el mejor exito a la hora de programar.\n");
+	printf("\n\n");
+	printf("\tLista de parametros, se refiere a los parametros previamente declarados dentro de la funcion principal o\n");
+	printf("\tdentro de otra funcion y que estos hayan sido retornados a la funcion principal para ser enviados a la\n");
+	printf("\tfuncion en la que sean requeridos. Esta lista de parametros puede tener parametros de un tipo diferente a\n");
+	printf("\tlos del retorno de la funcion, por ejemplo, la funcion puede ser de tipo flotante (float) y las varibles que\n");
+	printf("\tmandamos pueden ser de tipo entero (int).\n");
+	printf("\n\n");
+	break;
+		case 3:
+	printf("\n\n");
+	printf("\t\t\t\tComo hacer el llamado a una funcion\n");
+	printf("\n\n");
+	printf("\tHacer el llamado a una funcion es bastante sensillo solo deben tenerse en cuenta algunas cosas para hacerlo\n");
+	printf("\tcorrectamente.\n");	
+	printf("\tPara hacer el llamado a la funcion es tan sencillo como escribir la variable a retornar por ejemplo en el area\n");
+	printf("\tde un triangulo previamente declarada como A seguido del signo igual y el nombre de la funcion, con la lista de\n");
+	printf("\tparametros que vamos a mandar teniendo cuidado de soloescribir el nombre de la variable y no el tipo de esta.\n");
+	printf("\tEn el caso de tener una funcion que no retornara nada (void), solo basta con escribir el nombre de la funcion\n");
+	printf("\tseguido de un par de parentesis vacios sin olvidar el punto y coma.\n");
+	printf("\n\n");
+	break;
+		case 4:
+	printf("\n\n");
+	printf("\t\t\t\tEjemplo de funcion.\n");
+	printf("\n\n");
+	printf("\tfloat AreaRectangulo(float a,float b,float A);\n");
+	printf("\n\n");
+	printf("\tEn este caso tenemos una funcion de tipo flotante llamada AreaRectangulo con parametros tres flotantes, que \n");
+	printf("\tnos va a retornar una variable de tipo flotante.\n");
+	printf("\n\n");
+	printf("\tPara hacer el llamado a la funcion se hace lleva a cabo la siguiente sintaxis dentro de la funcion principal:\n");
+	printf("\n\n");
+	printf("\tArea=AreaRectangulo(a,b,A);\n");
+	printf("\n\n");
+	printf("\tPara desarrolar la funcion se hace fura de la funcion principal y lleva la siguiente sintaxis,  siguiendo con \n");
+	printf("\tel ejemplo del area de un rectangulo:\n");
+	printf("\n\n");
+	printf("\tfloat AreaRectangulo(float a,float b,float A){\n");
+	printf("\n\n");
+	printf("\t//Algoritmo\n");
+	printf("\n\n");
+	printf("\treturn A;\n");
+	printf("\n\n");
+	printf("\t}\n");
+	printf("\n\n");
+	break;
+		case 5:
+	printf("\tSaliendo...\n");
+	printf("\n\n");
+	break;
+	default:
+	printf("\tOpcion no encontrada... \n");
+	printf("\n\n");
+	break;			
+		}
+		system("pause");
+	}while(opcion!=5);
+}

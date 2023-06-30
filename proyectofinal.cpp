@@ -37,17 +37,15 @@ int main() {
 
 				printf("\n Selecione la opcion: "); scanf("%d", &opcion2);
 					switch (opcion2) {
-						case 1: TiposDatos();
+						case 1: 		TiposDatos();
 							break;
-		  			  case 2: EntradaSalidaDatos();
+		  			  case 2: 			EntradaSalidaDatos();
 		    				break;
-		   			 case 3: operadores(); 
-					
-						printf("3\n");
+		   			 case 3: 			operadores(); 
 		    			    break;
-		   			 case 4:printf("4\n");
+		   			 case 4:			Funciones();
 		    				break;
-		    			case 5:OperadoresRelacionales(); 
+		    			case 5:			OperadoresRelacionales(); 
 		   			     break;
 		   			 case 6:printf("Saliendo del Primer Parcial\n");
            			     break;
