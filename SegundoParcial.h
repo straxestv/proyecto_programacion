@@ -348,41 +348,51 @@ void programa3ifelse(void){
 			
 void Programa1ciclos(){
 	system("cls");
-	printf("\n\t Diseno de un programa que visualiza el \n");
-	printf("\n\t comportamiento del ciclo for en sus componentes.\n\n");
-	
+	printf("\n\t Diseno de un programa que visualiza el comportamiento del ciclo for en sus componentes \n");
+	printf("\n\t En segunda fila de valores, los grados se convierten radianes con la formula (g*M_PI)/180\n");
+	printf("\n\t en la segunda fila nos proporciona los valores del seno de los grados convertidos a radianes\n");
+	printf("\n\t en la tercera fila nos proporciona los valores del coseno de los grados convertidos a radianes\n");
+	printf("\n\t y en la cuarta fila nos proporciona los valores de la tangente de los grados convertidos a radianes\n");
 		int i;   float g=0, r, Se, Co, Ta;
-			printf(" \t Tabla de valores para las razones trigonometricas\n");
-			printf(" \t _________________________________________________\n");
-			printf(" \t ______0______90______180______270______360_______\n");
-    		printf("\n \t _________________________________________________\n\t");
+			printf(" \n\n\t Tabla de valores para las razones trigonometricas\n");
+			printf(" \t ______________________________________________________________\n");
+			printf(" \t ____0___________90___________180___________270__________360___\n");
+    		printf(" \t ______________________________________________________________\n\t");
+    for(g=0; g<=360; g = g+90){
+    	r = (g*M_PI)/180.0;  
+   	   		printf("   %5.2f rad",r);
+	}
+			printf("\n \t ______________________________________________________________\n\t");
     for(g=0; g<=360; g = g+90){
     	r = (g*M_PI)/180.0;
     		Se = sin(r);  
-   	   		printf("   %5.0f ",Se);
+   	   		printf("   %5.2f     ",Se);
 	}
-			printf("\n \t _________________________________________________\n\t");	
+			printf("\n \t ______________________________________________________________\n\t");	
 	for(g=0; g<=360; g = g+90){
     	r = (g*M_PI)/180.0;
     		Co = cos(r);
-   	   		printf("   %5.0f ",Co);
+   	   		printf("   %5.2f     ",Co);
 	}
-			printf("\n \t _________________________________________________\n\t");
+			printf("\n \t ______________________________________________________________\n\t");
 	for(g=0; g<=360; g = g+90){
     	r = (g*M_PI)/180.0;
     		Ta = tan(r); 
-   	   		if(Ta<0)	  printf("  indeterm.");
-   	   		else    printf("  %5.0f ",Ta);
+   	   		if(Ta<0)	  printf("  indeterm. ");
+   	   		else    
+			printf("   %5.2f      ",Ta);
 	}
-			printf("\n \t _________________________________________________\n");
+			printf("\n \t ______________________________________________________________\n");
+			
 }
+
 void gotoxy (int x, int y){
  HANDLE hcon; //Controladores que identifican la salida de coordenadas.
  hcon = GetStdHandle(STD_OUTPUT_HANDLE);
  COORD dwPos;
 
  dwPos.X = x; //Establece las coordenadas X.
- dwPos.Y = y+10; //Establece las coordenadas Y.
+ dwPos.Y = y; //Establece las coordenadas Y.
 
  SetConsoleCursorPosition(hcon,dwPos); //Establece la posicion final del cursor.
 }
@@ -397,18 +407,22 @@ void tabla (int x, int y){
 void Programa2ciclos(){
 	system("cls");
 	printf("\n\t\t\t\t Diseno de un programa que visualiza las coordenadas\n");
-	printf("\n\t\t\t\t x, y utilizando  gotoxy(x,y) y ciclos\n\n\n\n");
-
+	printf("\n\t\t\t\t x, y utilizando la funcion gotoxy(x,y) y ciclos\n\n");
+	printf("\n\t\t\t\t En este programa visualizamos la grafica de una parabola la\n");
+	printf("\n\t\t\t\t cual su ecuacion es y=x^2-6x+11 y a un lado suyo encontramos \n");
+	printf("\n\t\t\t\t su tabla de valores en x & y en con un rango de [-3,9]\n\n\n");
 		
-		float r,Se;   float x, y;
+		float r;   float x, y;
+		
 system("color f9");
+
 	tabla (x,y);
 
-for(int a=0; a<50; a++){
+for(int a=1; a<50; a++){
 	gotoxy(a,10);
 	printf("%c",196);  Sleep(50);
 }
-for(int a=0; a<25; a++){
+for(int a=1; a<25; a++){
 	gotoxy(10,a);
 	printf("%c",179); Sleep(50);
 }
@@ -421,7 +435,7 @@ for(x=-3;  x<=9; x++){
 	     	
 	}
 		while(!kbhit());
-	
+		
 }
 void PROGRAMASSWITCH(void){
 	system("cls");
