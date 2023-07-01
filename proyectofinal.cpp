@@ -10,7 +10,6 @@
 #include "tercerparcial.h"
 
 
-
 int main() {	
 system("mode con: cols=160 lines=40");
 	int anchoMarco = 45;

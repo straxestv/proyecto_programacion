@@ -14,10 +14,11 @@ void Menuparcial2(void){
 void Programa1ifelse(void){
 	int n, R;
     float X, RD;
-    printf("\t\t\t\t Programa que verifica la potencia de un numero flotante, \n");
+    printf("\n\n\t\t\t\t Programa que verifica la potencia de un numero flotante, \n");
     printf("\t\t\t\t para poder calcular la derivada 1 o 2.  \n");
-    printf("\t\t\t\t Utilizando los condicionales If-Else\n");
-    printf("\n\n\t\t\t\tDigitar la base de la potencia = ");
+    printf("\t\t\t\t Utilizando los condicionales If-Else, con la formula nX^n-1\n");
+    
+    printf("\n\n\t\t\t\tDigitar la base de la potencia X= ");
     scanf("%f",&X);
     printf("\n\t\t\t\tDigitar la potencia   n = ");
     scanf("%d",&n);
@@ -410,7 +411,7 @@ void Programa2ciclos(){
 	printf("\n\t\t\t\t x, y utilizando la funcion gotoxy(x,y) y ciclos\n\n");
 	printf("\n\t\t\t\t En este programa visualizamos la grafica de una parabola la\n");
 	printf("\n\t\t\t\t cual su ecuacion es y=x^2-6x+11 y a un lado suyo encontramos \n");
-	printf("\n\t\t\t\t su tabla de valores en x & y en con un rango de [-3,9]\n\n\n");
+	printf("\n\t\t\t\t su tabla de valores en x & y, con un rango de [-3,9]\n\n\n");
 		
 		float r;   float x, y;
 		
