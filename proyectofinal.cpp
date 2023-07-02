@@ -1,4 +1,3 @@
-
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
@@ -10,7 +9,7 @@
 #include "tercerparcial.h"
 #include "claveacesso.h"
 #include <stdbool.h>
-
+#include "Portada.h"
 
 int main() {	
 system("mode con: cols=160 lines=40");
@@ -29,10 +28,10 @@ system("mode con: cols=160 lines=40");
     int MEDIC[TamMed][Tsem];   int SMedic[TamMed];  int SPsem[Tsem];
     int x,y;
 
+        	imprimirPortada();
     if (authenticate()) {
-        do {
-		system("pause"); system("cls");
-
+        do {  
+	system("cls");
         TituloPortada(anchoMarco, altoMarco, texto);
 
 		MenuPrin();
@@ -42,7 +41,7 @@ system("mode con: cols=160 lines=40");
 
         case 1:
 		do {
-				system("pause"); system("cls"); //pausa del programa y limpieza de pantalla cada vez que se termine cada caso.
+				 system("cls"); //limpieza de pantalla cada vez que se termine cada caso.
 		 MenuPrimerparcial();  //menu primer parcial
 
 				printf("\n Selecione la opcion: "); scanf("%d", &opcion2);
