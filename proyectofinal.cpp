@@ -3,11 +3,13 @@
 #include<stdio.h>
 #include<math.h>
 #include<windows.h>
-#include <conio.h>
+#include<conio.h>
 #include "Menus.h"
 #include "Menu1erparcial.h"
 #include "SegundoParcial.h"
 #include "tercerparcial.h"
+#include "claveacesso.h"
+#include <stdbool.h>
 
 
 int main() {	
@@ -20,8 +22,15 @@ system("mode con: cols=160 lines=40");
     float Vector1[10]; //arreglo de tipo flotante con 10 espacios
     int ACTIVAR, buscarvec, modif_vec, valor2_vec; //variables que se usan en el menu de vectores
 	int matriz[FILAS][COLUMNAS]; //arreglo de 2 dimensiones que contiene una matriz
+	/////////////////////////////////////////////////// variables tabla medicamentos///////////////////////////////////////////////////
+	char TITULO[TAM]={"PRODUCCION SEMANAL DE MEDICAMENTOS"};
+	char SEMANA[Tsem][TAM]={"Lunes","Martes","Miercoles","Jueves","Viernes"};
+	char MEDICAMENTOS[TamMed][TAM]={"Paracetamol","Naproxeno","Ibupofreno"};
+    int MEDIC[TamMed][Tsem];   int SMedic[TamMed];  int SPsem[Tsem];
+    int x,y;
 
-	do {
+    if (authenticate()) {
+        do {
 		system("pause"); system("cls");
 
         TituloPortada(anchoMarco, altoMarco, texto);
@@ -32,7 +41,7 @@ system("mode con: cols=160 lines=40");
         switch (opcion) {
 
         case 1:
-		 do {
+		do {
 				system("pause"); system("cls"); //pausa del programa y limpieza de pantalla cada vez que se termine cada caso.
 		 MenuPrimerparcial();  //menu primer parcial
 
@@ -163,7 +172,7 @@ system("mode con: cols=160 lines=40");
 					break;
 				case 2:
 				    printf("TEMA: ARREGLOS DE DOS DIMENSIONES \n");
-					printf("PROGRAMA: Diseño de un programa ESTRUCTURADO que muestre la matriz digitada por un usuario. \n\n");
+					printf("PROGRAMA: Diseï¿½o de un programa ESTRUCTURADO que muestre la matriz digitada por un usuario. \n\n");
 					
 					
 					do{
@@ -182,15 +191,22 @@ system("mode con: cols=160 lines=40");
 								MostrarMatriz(matriz);
 							    break;
 							case 3:
-								printf("Regresando....");
+							    system("cls");
+								gotoxy(30,1); printf(" %s ",TITULO);
+                                FTITULOS(20,3,SEMANA,MEDICAMENTOS);
+                                LEEMEDIC(20,7,MEDIC);
+                                CALCPROD(MEDIC,SMedic,SPsem);
 								break;
+							case 4:
+							    printf("\t\t\t REGRESANDO.....");
+							    break;	
 										
 							default: printf("OPCION INCORRECTA!! ");
 							
 						}
 						
 						
-					}while(opcion3 != 3);
+					}while(opcion3 != 4);
 					
 					break;
 				case 3:
@@ -215,9 +231,10 @@ system("mode con: cols=160 lines=40");
 
 
 	} while(opcion != 4);
-
-
-
+    
+    } else {
+        printf("Acceso denegado. No se puede acceder al programa.\n");
+    }
 	return 0;
 }
 
