@@ -1,11 +1,11 @@
 void MenuPrimerparcial(){
-		printf("\t\t\t\t TEMAS \n");
-	printf("\t\t\t\t 1) Tipos de Datos\n");
-	printf("\t\t\t\t 2) Entrada y Salida de datos \n");
-	printf("\t\t\t\t 3) Operadores matematicos \n");
-	printf("\t\t\t\t 4) Funciones \n");
-	printf("\t\t\t\t 5) Op Relacionales \n");
-	printf("\t\t\t\t 6) Saliendo del Primer Parcial \n");
+		printf("\t\t\t\t\t\t\t TEMAS \n\n");
+	printf("\t\t\t\t\t\t 1) Tipos de Datos\n");
+	printf("\t\t\t\t\t\t 2) Entrada y Salida de datos \n");
+	printf("\t\t\t\t\t\t 3) Operadores matematicos \n");
+	printf("\t\t\t\t\t\t 4) Funciones \n");
+	printf("\t\t\t\t\t\t 5) Op Relacionales \n");
+	printf("\t\t\t\t\t\t 6) Saliendo del Primer Parcial \n");
 }
 void TiposDatos() {
     int opcion;
@@ -13,51 +13,55 @@ void TiposDatos() {
     do {
         system("cls"); 
         
-        printf("\t\t\t\t\tTipos de datos disponibles:\n\n");
-        printf("\t\t\t\t1. Enteros\n");
-        printf("\t\t\t\t2. Flotantes\n");
-        printf("\t\t\t\t3. Caracteres\n");
-        printf("\t\t\t\t4. Salir\n\n");
-        printf("\t\t\t\tSeleccione una opcion: ");
+        printf("\t\t\t\t\t\tTipos de datos disponibles:\n\n");
+        printf("\t\t\t\t\t\t\t1. Enteros\n");
+        printf("\t\t\t\t\t\t\t2. Flotantes\n");
+        printf("\t\t\t\t\t\t\t3. Caracteres\n");
+        printf("\t\t\t\t\t\t\t4. Salir\n\n");
+        printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
         switch (opcion) {
             case 1:
-                printf("\nTipos de datos enteros:\n");
-                printf("-------------------------------\n\n");
-                printf("1. int:\n");
-                printf("Representa numeros enteros(no soporta decimales).\n");
-                printf("Ejemplo:\n\n");
-                printf("\tSe declara una variable entera, con el nombre de edad, la cual se le asiga el valor de 25.\n");
-                printf("\t-int edad = 25;\n\n");
-                printf("2. long int(no soporta decimales):\n");
-                printf("Representa numeros enteros largos.\n");
-                printf("Ejemplo:\n\n");
-                printf("\tSe declara una variable entera larga, con el nombre de poblacion, la cual se le asigna el valor de 1000000.\n");
-                printf("\t-long int poblacion = 1000000;\n\n");
+            	system("cls"); 
+                printf("\t\t\t\t\t\tTipos de datos enteros:\n");
+                printf("\t\t\t\t\t-------------------------------------\n\n");
+                printf("\t\t\t1. int:\n");
+                printf("\t\t\tRepresenta numeros enteros(no soporta decimales).\n");
+                printf("\t\t\t-Ejemplo:\n\n");
+                printf("\t\t\tSe declara una variable entera, con el nombre de edad, la cual se le asiga el valor de 25.\n");
+                printf("\t\t\t-int edad = 25;\n\n");
+                printf("\n\t\t\t2. long int:\n");
+                printf("\t\t\tRepresenta numeros enteros largos(no soporta decimales).\n");
+                printf("\t\t\t-Ejemplo:\n\n");
+                printf("\t\t\tSe declara una variable entera larga, con el nombre de poblacion, la cual se le asigna el\n");
+                printf("\t\t\tvalor de 1000000.\n");
+				printf("\t\t\t-long int poblacion = 1000000;\n\n");
                 break;
             case 2:
-                printf("\nTipos de datos flotantes:\n");
-                printf("-------------------------------\n\n");
-                printf("1. float:\n");
-                printf("Representa numeros de punto flotante de precision simple.\n");
-                printf("Ejemplo: float precio = 10.99;\n\n");
-                printf("2. double:\n");
-                printf("Representa numeros de punto flotante de precision doble.\n");
-                printf("Ejemplo: double pi = 3.14159;\n\n");
+            	system("cls"); 
+                printf("\t\t\t\t\t\t\tTipos de datos flotantes\n");
+                printf("\t\t\t\t\t\t-------------------------------\n\n");
+                printf("\t\t\t\t\t1. float:\n");
+                printf("\t\t\t\t\tRepresenta numeros de punto flotante de precision simple.\n");
+                printf("\t\t\t\t\t-Ejemplo: float precio = 10.99;\n\n");
+                printf("\t\t\t\t\t2. double:\n");
+                printf("\t\t\t\t\tRepresenta numeros de punto flotante de precision doble.\n");
+                printf("\t\t\t\t\t-Ejemplo: double pi = 3.14159;\n\n");
                 break;
             case 3:
-                printf("\nTipos de datos de caracteres:\n");
-                printf("-------------------------------\n\n");
-                printf("1. char:\n");
-                printf("Representa un solo caracter.\n");
-                printf("Ejemplo: char inicial = 'A';\n\n");
+            	system("cls"); 
+                printf("\t\t\t\t\tTipos de datos de caracteres\n");
+                printf("\t\t\t\t\t-------------------------------\n\n");
+                printf("\t\t\t\t\t1. char:\n");
+                printf("\n\t\t\t\t\tRepresenta un solo caracter.\n");
+                printf("\t\t\t\t\t-Ejemplo: char inicial = 'A';\n\n");
                 break;
             case 4:
-                printf("Saliendo del submenu.\n");
+                printf("\nSaliendo del submenu.\n\n");
                 break;
             default:
-                printf("Opcion no valida.\n");
+                printf("Opcion no valida.\n\n");
                 break;
         }
 
@@ -71,44 +75,47 @@ void EntradaSalidaDatos() {
     do {
         system("cls"); 
 
-        printf("Tema: Entrada y Salida de Datos\n");
-        printf("------------------------------------\n");
-        printf("1. Funciones de entrada (scanf)\n");
-        printf("2. Funciones de salida (printf)\n");
-        printf("3. Salir\n");
+        printf("\t\t\t\t\t\tTema: Entrada y Salida de Datos\n");
+        printf("\t\t\t\t\t\t------------------------------------\n");
+        printf("\t\t\t\t\t\t1. Funciones de entrada (scanf)\n");
+        printf("\t\t\t\t\t\t2. Funciones de salida (printf)\n");
+        printf("\t\t\t\t\t\t3. Salir\n");
         printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
         switch (opcion) {
             case 1:
-                printf("\nFunciones de entrada (scanf):\n");
-                printf("------------------------------------\n");
-                printf("La funcion scanf se utiliza para leer datos desde la entrada estandar.\n");
-                printf("Ejemplo: \n\n");
-                printf("\tSe declara una variable entera con el nombre edad:\n");
-                printf("\t\t-int edad;\n\n");
-                printf("\tSe le solicitara al usuario que ingrese su edad:\n ");
-                printf("\t\t-printf(\"Ingrese su edad: \");\n\n");
-                printf("\tMediante la funcion scanf, se lee el dato, asignandoselo a la variable edad:\n");
-                printf("\t\tscanf(\"%%d\", &edad);\n\n");
-                printf("\tSe despliega el dato antes obtenido, utilizando la variable entera edad:\n");
-                printf("\t\tprintf(\"Su edad es: %%d\\n\", edad);\n");
+            	system("cls"); 
+                printf("\n\t\t\t\t\t\tFunciones de entrada (scanf)\n");
+                printf("\t\t\t\t\t------------------------------------------\n");
+                printf("\t\t\t\tLa funcion scanf se utiliza para leer datos desde la entrada estandar.\n");
+                printf("\t\t\t\tEjemplo: \n\n");
+                printf("\t\t\t\tSe declara una variable entera con el nombre edad:\n");
+                printf("\t\t\t\t-int edad;\n\n");
+                printf("\t\t\t\tSe le solicitara al usuario que ingrese su edad:\n ");
+                printf("\t\t\t\t-printf(\"Ingrese su edad: \");\n\n");
+                printf("\t\t\t\tMediante la funcion scanf, se lee el dato, asignandoselo a la variable edad:\n");
+                printf("\t\t\t\t-scanf(\"%%d\", &edad);\n\n");
+                printf("\t\t\t\tSe despliega el dato antes obtenido, utilizando la variable entera edad:\n");
+                printf("\t\t\t\t-printf(\"Su edad es: %%d\\n\", edad);\n\n");
                 break;
             case 2:
-                printf("\nFunciones de salida (printf):\n");
-                printf("------------------------------------\n");
-                printf("La funcion printf se utiliza para imprimir datos en la salida estandar.\n");
-                printf("Ejemplo: \n\n");
-                printf("\tSe declara una variable entera con el nombre de edad, la cual se le asigna el valor de 25");
-                printf("\t\tint edad = 25;\n");
-                printf("\tSe imprime los datos mediante la funcion printf,usando la varaible edad ");
-                printf("\t\tprintf(\"Mi edad es: %%d\\n\", edad);\n");
+            	system("cls"); 
+                printf("\n\t\t\t\t\t\tFunciones de salida (printf):\n");
+                printf("\t\t\t\t\t------------------------------------------\n");
+                printf("\t\t\t\t\tLa funcion printf se utiliza para imprimir datos en la salida estandar.\n");
+                printf("\t\t\t\t\tEjemplo: \n\n");
+                printf("\t\t\t\t\tSe declara una variable entera con el nombre de edad, la cual se le asigna\n");
+                printf("\t\t\t\t\tel valor de 25\n");
+				printf("\t\t\t\t\t-int edad = 25;\n\n");
+                printf("\t\t\t\t\tSe imprime los datos mediante la funcion printf,usando la varaible edad\n ");
+                printf("\t\t\t\t\t-printf(\"Mi edad es: %%d\\n\", edad);\n\n");
                 break;
             case 3:
-                printf("Saliendo del submenu.\n");
+                printf("\nSaliendo del submenu.\n\n");
                 break;
             default:
-                printf("Opcion no valida.\n");
+                printf("\nOpcion no valida.\n\n");
                 break;
         }
         system("pause");
@@ -123,105 +130,105 @@ void OperadoresRelacionales() {
     do {
         system("cls"); 
        
-        printf("Tema: Operadores Relacionales\n");
-        printf("------------------------------------\n");
-        printf("1. Igual a (==)\n");
-        printf("2. Diferente de (!=)\n");
-        printf("3. Mayor que (>)\n");
-        printf("4. Menor que (<)\n");
-        printf("5. Mayor o igual que (>=)\n");
-        printf("6. Menor o igual que (<=)\n");
-        printf("7. Salir\n");
-        printf("Seleccione una opcion: ");
+        printf("\t\t\t\t\tTema: Operadores Relacionales\n");
+        printf("\t\t\t\t\t------------------------------------\n");
+        printf("\t\t\t\t\t\t1. Igual a (==)\n");
+        printf("\t\t\t\t\t\t2. Diferente de (!=)\n");
+        printf("\t\t\t\t\t\t3. Mayor que (>)\n");
+        printf("\t\t\t\t\t\t4. Menor que (<)\n");
+        printf("\t\t\t\t\t\t5. Mayor o igual que (>=)\n");
+        printf("\t\t\t\t\t\t6. Menor o igual que (<=)\n");
+        printf("\t\t\t\t\t\t7. Salir\n");
+        printf("\nSeleccione una opcion: ");
         scanf("%d", &opcion);
 
        
 
         switch (opcion) {
             case 1:
-                printf("Ingrese el valor de a: ");
+                printf("\t\t\t\t\tIngrese el valor de a: ");
                 scanf("%d", &a);
-                printf("Ingrese el valor de b: ");
+                printf("\t\t\t\t\tIngrese el valor de b: ");
                 scanf("%d", &b);
 
                 if (a == b) {
-                    printf("%d es igual a %d\n", a, b);
+                    printf("\t\t\t\t\t%d es igual a %d\n\n", a, b);
                 } else {
-                    printf("%d no es igual a %d\n", a, b);
+                    printf("\t\t\t\t\t%d no es igual a %d\n\n", a, b);
                 }
                 break;
 
             case 2:
-                printf("Ingrese el valor de a: ");
+                printf("\t\t\t\t\tIngrese el valor de a: ");
                 scanf("%d", &a);
-                printf("Ingrese el valor de b: ");
+                printf("\t\t\t\t\tIngrese el valor de b: ");
                 scanf("%d", &b);
 
                 if (a != b) {
-                    printf("%d es diferente de %d\n", a, b);
+                    printf("\t\t\t\t\t%d es diferente de %d\n\n", a, b);
                 } else {
-                    printf("%d no es diferente de %d\n", a, b);
+                    printf("\t\t\t\t\t%d no es diferente de %d\n\n", a, b);
                 }
                 break;
 
             case 3:
-                printf("Ingrese el valor de a: ");
+                printf("\t\t\t\t\tIngrese el valor de a: ");
                 scanf("%d", &a);
-                printf("Ingrese el valor de b: ");
+                printf("\t\t\t\t\tIngrese el valor de b: ");
                 scanf("%d", &b);
 
                 if (a > b) {
-                    printf("%d es mayor que %d\n", a, b);
+                    printf("\t\t\t\t\t%d es mayor que %d\n\n", a, b);
                 } else {
-                    printf("%d no es mayor que %d\n", a, b);
+                    printf("\t\t\t\t\t%d no es mayor que %d\n\n", a, b);
                 }
                 break;
 
             case 4:
-                printf("Ingrese el valor de a: ");
+                printf("\t\t\t\t\tIngrese el valor de a: ");
                 scanf("%d", &a);
-                printf("Ingrese el valor de b: ");
+                printf("\t\t\t\t\tIngrese el valor de b: ");
                 scanf("%d", &b);
 
                 if (a < b) {
-                    printf("%d es menor que %d\n", a, b);
+                    printf("\t\t\t\t\t%d es menor que %d\n\n", a, b);
                 } else {
-                    printf("%d no es menor que %d\n", a, b);
+                    printf("\t\t\t\t\t%d no es menor que %d\n\n", a, b);
                 }
                 break;
 
             case 5:
-                printf("Ingrese el valor de a: ");
+                printf("\t\t\t\t\tIngrese el valor de a: ");
                 scanf("%d", &a);
-                printf("Ingrese el valor de b: ");
+                printf("\t\t\t\t\tIngrese el valor de b: ");
                 scanf("%d", &b);
 
                 if (a >= b) {
-                    printf("%d es mayor o igual que %d\n", a, b);
+                    printf("\t\t\t\t\t%d es mayor o igual que %d\n\n", a, b);
                 } else {
-                    printf("%d no es mayor o igual que %d\n", a, b);
+                    printf("\t\t\t\t\t%d no es mayor o igual que %d\n\n", a, b);
                 }
                 break;
 
             case 6:
-                printf("Ingrese el valor de a: ");
+                printf("\t\t\t\t\tIngrese el valor de a: ");
                 scanf("%d", &a);
-                printf("Ingrese el valor de b: ");
+                printf("\t\t\t\t\tIngrese el valor de b: ");
                 scanf("%d", &b);
 
                 if (a <= b) {
-                    printf("%d es menor o igual que %d\n", a, b);
+                    printf("\t\t\t\t\t%d es menor o igual que %d\n\n", a, b);
                 } else {
-                    printf("%d no es menor o igual que %d\n", a, b);
+                    printf("\t\t\t\t\t%d no es menor o igual que %d\n\n", a, b);
                 }
                 break;
 
             case 7:
-                printf("Saliendo del submenu\n");
+                printf("\nSaliendo del submenu\n\n");
                 break;
 
             default:
-                printf("Opcion invalida. Intente nuevamente.\n");
+                printf("Opcion invalida.\n\n");
                 break;
         }
 
