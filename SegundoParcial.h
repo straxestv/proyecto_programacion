@@ -99,7 +99,7 @@ void Teoriaifelse(void){
 	printf("\t\t\t\t { Sentencia si es falsa }\n");
 }
 void MENUCALC( void ){
-	system("color 90");
+	system("color f9");
 	printf("\n\n\n");
 	printf("\t\t\t\t   M E N U   D E   T R I A N G U L O S  \n ");
 	printf("\t\t\t\t ______________________________________\n");
@@ -190,7 +190,7 @@ float Perimetro_Equilatero(float a, float b, float c){
 }
 float Perimetro_Isoseles(float a, float b, float c){
 	
-	return (a+a+a);
+	return (a+b+c);
 }
 int Verif_trian(float a, float b, float c){
 	
@@ -393,7 +393,7 @@ void gotoxy (int x, int y){
  COORD dwPos;
 
  dwPos.X = x; //Establece las coordenadas X.
- dwPos.Y = y; //Establece las coordenadas Y.
+ dwPos.Y = y+8; //Establece las coordenadas Y.
 
  SetConsoleCursorPosition(hcon,dwPos); //Establece la posicion final del cursor.
 }
